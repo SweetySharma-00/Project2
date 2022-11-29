@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00833D"
+        android:weightSum="10"
+        >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginTop="45dp"
+        android:background="#FFF"
+        android:outlineSpotShadowColor="#9D9D9D" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.3"
+        app:srcCompat="@drawable/sv" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginTop="30sp"
+        android:text="Sign In"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3.5"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="9sp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#fff"
+        app:contentPadding="15dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtMobileNumber"
+            style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number"
+            app:boxStrokeColor="#00833D"
+
+            android:textColorHint="#C5C5C3"
+            app:hintEnabled="true"
+            app:hintTextColor="#C5C5C3"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:enabled="true"
+
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:paddingTop="20dp"
+                android:textSize="16sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPin"
+            style="@style/ShapeAppearanceOverlay.Material3.FloatingActionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pin"
+            app:boxStrokeColor="#00833D"
+            android:textColorHint="#C5C5C3"
+            app:hintEnabled="true"
+            app:hintTextColor="#C5C5C3"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:enabled="true"
+                android:maxLength="6"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="#000"
+                android:paddingTop="20dp"
+                android:drawableRight="@drawable/ic_eye"
+                android:textSize="16sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/ForgetPin"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:text="@string/forget_pin"
+                android:textSize="18sp"
+                android:textColor="#00833D"
+                android:layout_gravity="left"
+                android:textAlignment="gravity"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/ic_selected"
+        />
+</FrameLayout>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="60sp"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:text="@string/new_to_supreme_venture_gaming"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    <Button
+        android:id="@+id/btn"
+        style="@style/GreenButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginBottom="10sp"
+        android:backgroundTint="#FFC600"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="#00833D"
+        android:textSize="18sp" />
+
+
+
+</RelativeLayout>

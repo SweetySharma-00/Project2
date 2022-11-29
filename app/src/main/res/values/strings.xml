@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">project2</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="pin">Pin</string>
+    <string name="forget_pin">Forget Pin?</string>
+    <string name="new_to_supreme_venture_gaming">New to Supreme Venture Gaming?</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

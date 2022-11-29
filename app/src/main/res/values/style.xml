@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenButtonStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="backgroundTint">@color/yellow_border</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+    </style>
+</resources>
